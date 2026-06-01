@@ -32,6 +32,13 @@ class UtilizadorController extends Controller {
             Response::error("Nome e email são obrigatórios.");
         }
 
+        $validator = new \App\Helpers\Validator();
+        $validator->email("email", $dados["email"]);
+            if (!$validator->valido()) {
+            Response::error($validator->primeiroErro());
+            
+        }
+
         // Verificar email duplicado
         $check = $this->db->prepare("SELECT COUNT(*) FROM utilizadores WHERE email = ?");
         $check->execute([$dados["email"]]);

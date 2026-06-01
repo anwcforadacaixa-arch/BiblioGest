@@ -34,6 +34,13 @@ class PerfilController extends Controller {
 
         // Verificar email duplicado
         if (!empty($dados["email"])) {
+
+            $validator = new \App\Helpers\Validator();
+            $validator->email("email", $dados["email"]);
+            if (!$validator->valido()) {
+                Response::error($validator->primeiroErro());
+            }
+
             $check = $this->db->prepare("
                 SELECT COUNT(*) FROM utilizadores
                 WHERE email = ? AND id != ?

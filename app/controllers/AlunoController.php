@@ -50,7 +50,8 @@ class AlunoController extends Controller {
         $validator
             ->obrigatorio("numero_estudante", $dados["numero_estudante"] ?? "")
             ->obrigatorio("nome", $dados["nome"] ?? "")
-            ->obrigatorio("curso", $dados["curso"] ?? "");
+            ->obrigatorio("curso", $dados["curso"] ?? "")
+            ->email("email", $dados["email"]?? "");
 
         if (!$validator->valido()) {
             Response::error($validator->primeiroErro());
