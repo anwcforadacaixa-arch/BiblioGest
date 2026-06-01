@@ -1,0 +1,137 @@
+@font-face {
+	font-family: "MuseoSans";
+	src: url("fonts/museosans.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "FuturaPT";
+	src: url("fonts/FuturaPT.otf") format("opentype");
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: museosans;
+    background-color: #001435;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.login-container{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.login-box{
+
+    background: #002456;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba (0,0,0,0.1);
+    width: 380px;
+    text-align: center;
+
+}
+
+.login-box img{
+
+    width: 135px;
+    height: 140px;
+    margin-bottom: 6px;
+
+}
+
+/*.login-box h1{
+
+    color: white;
+    font-size: 32px;
+    margin-bottom: 6px;
+
+}
+
+.subtitulo{
+
+    color: #178DC6;
+    font-size: 16px;
+    margin-bottom: 30px;
+
+}*/
+
+.campo label{
+
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    color: #178DC6;
+    margin-bottom: 6px;
+
+}
+
+.campo input{
+
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s;
+
+}
+
+.campo input:focus{
+
+    border-color: #2E5496;
+
+}
+
+button{
+
+    width: 100%;
+    padding: 12px;
+    background-color: #001435;
+    color: #178DC6;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s;
+
+}
+
+button:hover{
+  
+    background-color: #1e3d6e;
+
+}
+
+.erro{
+
+    background-color: #ffe0e0;
+    color: #c0392b;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 16px;
+
+}
+
+.escondido{
+
+    display: none;
+
+}

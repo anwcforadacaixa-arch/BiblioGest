@@ -1,0 +1,55 @@
+.verificar-codigo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.verificar-codigo input {
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width: 200px;
+    outline: none;
+}
+
+.verificar-codigo input:focus {
+    border-color: #2E5496;
+}
+
+.badge.pendente  { background: #fff8e1; color: #f57f17; }
+.badge.aprovado  { background: #e8f5e9; color: #2e7d32; }
+.badge.rejeitado { background: #fdecea; color: #c62828; }
+.badge.expirado  { background: #f5f5f5; color: #757575; }
+
+.resultado-card {
+    background: #EEF2FB;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+}
+
+.resultado-card h4 {
+    color: #2E5496;
+    margin-bottom: 8px;
+}
+
+.resultado-card p {
+    font-size: 14px;
+    color: #444;
+    margin: 4px 0;
+}
+
+.codigo-grande {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2E5496;
+    letter-spacing: 4px;
+    text-align: center;
+    background: white;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 8px 0;
+}

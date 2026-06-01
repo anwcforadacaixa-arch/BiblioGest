@@ -1,0 +1,67 @@
+.separadores {
+    flex-wrap: wrap;
+}
+
+.badge-atraso {
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.badge-atraso.critico {
+    background: #fdecea;
+    color: #c62828;
+}
+
+.badge-atraso.atencao {
+    background: #fff8e1;
+    color: #f57f17;
+}
+
+.badge-atraso.normal {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.relatorio-secao {
+    margin-bottom: 24px;
+}
+
+.relatorio-secao h3 {
+    color: #2E5496;
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #EEF2FB;
+}
+
+.btn-exportar {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background 0.2s;
+    width: auto;
+    margin: 0;
+}
+
+.btn-exportar.pdf {
+    background: #c62828;
+    color: white;
+}
+
+.btn-exportar.pdf:hover {
+    background: #a31515;
+}
+
+.btn-exportar.excel {
+    background: #2e7d32;
+    color: white;
+}
+
+.btn-exportar.excel:hover {
+    background: #1b5e20;
+}

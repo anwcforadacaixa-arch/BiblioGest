@@ -1,0 +1,92 @@
+.aluno-perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    margin-bottom: 24px;
+    flex-shrink: 0;
+}
+
+.aluno-perfil img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #EEF2FB;
+}
+
+.aluno-perfil h3 {
+    color: #2E5496;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.aluno-perfil p {
+    color: #888;
+    font-size: 13px;
+    margin: 2px 0;
+}
+
+.secao {
+    margin-bottom: 24px;
+    flex-shrink: 0;
+}
+
+.secao h3 {
+    color: #2E5496;
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #EEF2FB;
+}
+
+.btn-editar-foto {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #2E5496;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.perfil-acoes button {
+    padding: 8px 16px;
+    background: #EEF2FB;
+    color: #2E5496;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    width: auto;
+    margin: 0;
+}
+
+.perfil-acoes button:hover {
+    background: #D9E1F2;
+}
+
+.perfil-form {
+    background: white;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    margin-bottom: 24px;
+    flex-shrink: 0;
+}
+
+.perfil-form h3 {
+    color: #2E5496;
+    margin-bottom: 16px;
+    font-size: 15px;
+}

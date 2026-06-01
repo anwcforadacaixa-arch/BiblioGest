@@ -1,0 +1,14 @@
+{
+    "name": "bibliogest/app",
+    "description": "Sistema Web de Gestão de Biblioteca",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "dompdf/dompdf": "^3.1",
+        "phpoffice/phpspreadsheet": "^5.7"
+    }
+}

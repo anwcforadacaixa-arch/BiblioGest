@@ -1,0 +1,29 @@
+# Dependências
+/vendor/
+
+# Variáveis de ambiente
+.env
+
+# Uploads de utilizadores
+/public/assets/uploads/
+
+# Backups
+/storage/backups/
+
+# Logs
+/storage/logs/
+
+# Ficheiros do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.user
+
+# PHP
+*.log
+*.cache
