@@ -17,6 +17,18 @@ class AuthController extends Controller {
 
     }
 
+    public function landing(): void {
+
+        if (isset($_SESSION["id"])) {
+
+            \App\Helpers\Redirecionamento::ir($_SESSION["perfil"]);
+
+        }
+
+        $this->view("landing");
+        
+    }
+
     // Página de login
     public function loginPage(): void {
 

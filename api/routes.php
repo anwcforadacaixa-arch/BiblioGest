@@ -15,7 +15,8 @@ use App\Controllers\PainelAlunoController;
 /** @var \App\Core\Router $router */
 
 // ─── PÚBLICAS ─────────────────────────────────────────────────
-$router->get('/',            [AuthController::class, 'loginPage']);
+
+$router->get('/',            [AuthController::class, 'landing']);
 $router->post('/auth/login', [AuthController::class, 'processarLogin']);
 $router->get('/auth/logout', [AuthController::class, 'logout']);
 $router->get('/auth/alterar-senha',  [AuthController::class, 'alterarSenhaPagina']);
