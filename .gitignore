@@ -13,17 +13,32 @@
 # Logs
 /storage/logs/
 
-# Ficheiros do sistema
+# Cache e temporários
+*.cache
+*.tmp
+*.log
+
+# Ficheiros do sistema operativo
 .DS_Store
 Thumbs.db
 desktop.ini
+ehthumbs.db
 
-# IDEs
+# IDEs e editores
 .vscode/
 .idea/
 *.suo
 *.user
+*.swp
+*.swo
+nbproject/
 
 # PHP
-*.log
-*.cache
+php_errors.log
+
+# Node (caso venhas a usar)
+node_modules/
+npm-debug.log
+
+# Composer
+composer.phar
